@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Maru ;
+  src: url(fonts/GT-Maru-Mono-Bold.ttf);
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* position: fixed; */
+  overflow-x: hidden;
+  /* background-image: url("img/stripe-sketches-34.gif"); */
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  /* background-blend-mode: multiply; */
+}
+
+img {
+  /* background-position: center center; */
+  /* max-width:120%;
+  max-height:110%; */
+  width: 150%;
+  mix-blend-mode: multiply;
+  margin: 0;
+  position: fixed;
+}
+ 
+#stripes div {
+  /* opacity: .5; */
+  /* mix-blend-mode: multiply; */
+  
+}
+
+
+#buttons {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+   
+}
+
+
+.typeitbox{
+  font-family: Maru;
+  color: rgb(255, 0, 217); ;
+  font-size: 200px;
+ 
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  padding:0;
+}
+.mybuttons {
+  background-color: rgb(255, 0, 217); /* Green */
+  font-family: Maru;
+  border-radius: 20px;
+  border: none;
+  color: white ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-30%) translateY(-30%);
+  
+}
+
+.mybuttonsagain {
+  background-color: rgb(255, 0, 217); /* Green */
+  font-family: Maru;
+  border-radius: 20px;
+  border: none;
+  color: white ;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 80%;
+  right: 14%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-30%) translateY(-30%);
+  
+}
+
+
+
+input[type=text], select {
+  width: 200%;
+  padding: 12px 20px;
+  margin: 0;
+  display: inline-block;
+
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  padding: 14px 20px;
+  margin: 0;
+  border: none; 
+  cursor: pointer;
+}
+
+/*----------------------------------
+ textfield
+----------------------------------*/
+
+div {
+  border-radius: 5px;
+
+}
