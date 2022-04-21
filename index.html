@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta charset="utf-8"> 
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>stripe it</title>
+      <title>haiku it!</title>
       <link rel="stylesheet" href="three.css">
+      
+      <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> -->
 
-      <script src=
-      "https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
-        </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
   </head>
-  <body>
+  <body> 
+    <div id="content">
     <div id="random"></div>  
 
  
@@ -20,15 +22,41 @@
       <button class="mybuttons" id="add">stripe it!</button>
 
       <textarea class="typeitbox" id="typeitbox" name="typeitbox" rows="2" cols="10">
-        type it!
+       type it!
         </textarea>
-      <button class="mybuttonsagain"onclick="window.print()">print it!</button>
+      <!-- <button class="mybuttonsagain"onclick="window.print()">save it!</button> -->
+      
+      <!-- <div id="editor"></div>
+<button class="mybuttonsagain"  id="cmd">generate PDF</button> -->
+
+<button class="mybuttonsagain" onclick="javascript:createPdf()" id="cmd">save it!</button>
+
+
+      <!-- <button class="mybuttonsagain" onclick="generatePDF()">save it!</button>
+      <div id="invoice">
+        <h1>haiku it! :)</h1>
+      </div>
+   -->
 
   </div>
     </div>
     <div id="stripes"></div>
+
+    <div class="hwrap"><div class="hmove">
+      <div class="hitem">hai·ku
+        /ˈhīˌko͞o/
+        noun
+        a poem of seventeen syllables, in three lines of five, seven, and five.</div>
+      <div class="hitem">1. type your own haiku </div>
+      <div class="hitem">2. stripe it </div>
+      <div class="hitem">3.save it</div>
+    </div></div>
     <script src="script.js"></script> 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+
+    
+  </div>
     
       
   </body>
